@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurace U Matěje</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">Restaurace U Matěje</div>
+
+  <nav>
+    <a href="#home">Domů</a>
+
+    <div class="nav-dropdown">
+      <button class="dropdown-toggle">Menu ▾</button>
+      <div class="dropdown-content">
+        <div id="menu-preview"></div>
+        <a href="#menu" class="btn small">Celé menu</a>
+      </div>
+    </div>
+
+    <a href="#reviews">Recenze</a>
+    <a href="#about">O nás</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <a href="#menu" class="btn">Denní menu</a>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Poctivá česká kuchyně ve Staré Bělé</h1>
+    <p>Velké porce, skvělé ceny, příjemná obsluha a domácí atmosféra.</p>
+    <div class="hero-buttons">
+      <a href="#menu" class="btn">Zobrazit jídelní lístek</a>
+      <a href="#contact" class="btn outline">Kontakt</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>O restauraci</h2>
+  <p class="center">
+    Poctivá domácí kuchyně, velké porce a příjemné ceny.
+    Oblíbený cíl cyklistů i rodin. Nabízíme zahrádku,
+    možnost pořádání oslav a platbu kartou.
+  </p>
+</section>
+
+<section id="menu" class="section light">
+  <h2>Jídelní lístek</h2>
+
+  <!-- MENU SE NAČÍTÁ ODTUD -->
+  <div id="menu-full"></div>
+</section>
+
+<section id="reviews" class="section">
+  <h2>Recenze hostů</h2>
+
+  <div class="review-slider">
+    <div class="review active">„Výborné jídlo, velké porce, milá obsluha.“</div>
+    <div class="review">„Panenka s hříbkovou omáčkou byla top.“</div>
+    <div class="review">„Nejlepší bramboráky široko daleko.“</div>
+  </div>
+</section>
+
+<section id="contact" class="section light">
+  <h2>Kontakt</h2>
+
+  <div class="contact-grid">
+    <div>
+      <p><strong>Adresa:</strong><br>Stará Bělá, Ostrava</p>
+      <p><strong>Telefon:</strong><br>+420 000 000 000</p>
+      <p><strong>Email:</strong><br>info@restauraceumateje.cz</p>
+
+      <!-- OTEVÍRACÍ DOBA -->
+      <div id="opening-hours"></div>
+
+      <a class="btn" href="#">Navigovat</a>
+    </div>
+
+    <iframe
+      src="https://maps.google.com/maps?q=Stará%20Bělá&t=&z=13&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> Restaurace U Matěje</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
